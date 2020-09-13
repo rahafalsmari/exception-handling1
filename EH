@@ -1,0 +1,51 @@
+package tweeter;
+
+import java.util.*;
+import java.lang.ArithmeticException;
+public class Tweeter {
+
+ 
+         
+        
+        
+         
+       
+        
+    public static void main(String[] args) {
+        Scanner input =new Scanner(System.in);
+       // int result =1;
+        
+         
+        System.out.print("enter num :");
+        int a=input.nextInt();
+         System.out.print("enter power :");
+         int b =input.nextInt();
+        power(a,b);
+    }
+    
+        public static void power(int a, int b){
+            
+            try{
+                if(a<0||b<0)
+             {
+                  throw new ArithmeticException();
+                
+                        
+            } else {
+        int result= (int) Math.pow(a, b);
+          System.out.println("result="+ result);
+            }
+        
+            
+        
+        }
+
+        catch(ArithmeticException e) {
+            
+                System.out.print("a and b  should non negative");
+}
+         
+}       
+}
+    
+
